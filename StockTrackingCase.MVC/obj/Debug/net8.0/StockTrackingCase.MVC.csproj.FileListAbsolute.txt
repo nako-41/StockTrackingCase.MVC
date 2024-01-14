@@ -268,3 +268,4 @@ C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingC
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\bin\Debug\net8.0\libman.json

@@ -227,3 +227,686 @@ ORDER BY [s].[Type]
 2024-01-15 01:04:24.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/favicon.ico - null null
 2024-01-15 01:04:24.879 +03:00 [INF] The file /favicon.ico was not modified
 2024-01-15 01:04:24.881 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/favicon.ico - 304 null image/x-icon 21.6832ms
+2024-01-15 01:20:54.585 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:20:54.994 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:20:54.996 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:20:55.000 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:20:55.002 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:20:55.004 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:21:03.216 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/ - null null
+2024-01-15 01:21:05.513 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:21:05.681 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:21:06.293 +03:00 [INF] Dizin cagrildi
+2024-01-15 01:21:09.988 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:21:10.136 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:21:10.387 +03:00 [INF] Executed ViewResult - view Index executed in 250.6024ms.
+2024-01-15 01:21:10.398 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 4710.7831ms
+2024-01-15 01:21:10.404 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:21:10.409 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:21:10.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:21:10.450 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 30.3104ms
+2024-01-15 01:21:10.452 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/ - 200 null text/html; charset=utf-8 7444.2365ms
+2024-01-15 01:21:10.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 298.3225ms
+2024-01-15 01:21:48.330 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/StockUnit - null null
+2024-01-15 01:21:48.396 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/StockUnit - 404 0 null 66.6712ms
+2024-01-15 01:21:48.407 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7048/StockUnit, Response status code: 404
+2024-01-15 01:22:02.704 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/StockUnits - null null
+2024-01-15 01:22:02.725 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:22:02.761 +03:00 [INF] Route matched with {action = "Index", controller = "StockUnits"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.StockUnitsController (StockTrackingCase.MVC).
+2024-01-15 01:22:03.028 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[IsActive], [s].[PaperWeight], [s].[PurchasePrice], [s].[PurchasePriceCurrency], [s].[SellingPrice], [s].[SellingPriceCurrency], [s].[StockId], [s].[Type], [s].[UnitCode], [s0].[Id], [s0].[IsActive], [s0].[Type]
+FROM [StockUnits] AS [s]
+INNER JOIN [Stocks] AS [s0] ON [s].[StockId] = [s0].[Id]
+2024-01-15 01:22:03.104 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:22:03.108 +03:00 [INF] Dizin cagrildi
+2024-01-15 01:22:03.113 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:22:03.156 +03:00 [INF] Executed ViewResult - view Index executed in 44.4041ms.
+2024-01-15 01:22:03.172 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC) in 405.9769ms
+2024-01-15 01:22:03.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/StockTrackingCase.MVC.styles.css?v=_BwEMOOVHLFe7RKE1qaqajl5gjkTzNx2n5uOANArvFU - null null
+2024-01-15 01:22:03.178 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:22:03.179 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:22:03.185 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/StockUnits - 200 null text/html; charset=utf-8 481.5155ms
+2024-01-15 01:22:03.195 +03:00 [INF] The file /StockTrackingCase.MVC.styles.css was not modified
+2024-01-15 01:22:03.196 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 16.3296ms
+2024-01-15 01:22:03.204 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/StockTrackingCase.MVC.styles.css?v=_BwEMOOVHLFe7RKE1qaqajl5gjkTzNx2n5uOANArvFU - 304 null text/css 26.1811ms
+2024-01-15 01:22:03.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:22:03.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.2404ms
+2024-01-15 01:24:11.816 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:24:12.074 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:24:12.076 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:24:12.079 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:24:12.081 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:24:12.082 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:24:14.726 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:24:15.065 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:24:15.401 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:24:15.615 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:24:17.607 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:24:17.723 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:24:17.877 +03:00 [INF] Executed ViewResult - view Index executed in 151.4432ms.
+2024-01-15 01:24:17.885 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2478.8663ms
+2024-01-15 01:24:17.888 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:24:17.898 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:24:17.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 14.3213ms
+2024-01-15 01:24:17.922 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:24:17.924 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 3204.7097ms
+2024-01-15 01:24:17.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.4421ms
+2024-01-15 01:24:21.745 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/StockUnits - null null
+2024-01-15 01:24:21.755 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:24:21.759 +03:00 [INF] Route matched with {action = "Index", controller = "StockUnits"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.StockUnitsController (StockTrackingCase.MVC).
+2024-01-15 01:24:21.947 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[IsActive], [s].[PaperWeight], [s].[PurchasePrice], [s].[PurchasePriceCurrency], [s].[SellingPrice], [s].[SellingPriceCurrency], [s].[StockId], [s].[Type], [s].[UnitCode], [s0].[Id], [s0].[IsActive], [s0].[Type]
+FROM [StockUnits] AS [s]
+INNER JOIN [Stocks] AS [s0] ON [s].[StockId] = [s0].[Id]
+2024-01-15 01:24:22.038 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:24:22.043 +03:00 [INF] Stok Birim cagrildi
+2024-01-15 01:24:22.046 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:24:22.087 +03:00 [INF] Executed ViewResult - view Index executed in 41.9803ms.
+2024-01-15 01:24:22.090 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC) in 326.5116ms
+2024-01-15 01:24:22.093 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:24:22.097 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/StockUnits - 200 null text/html; charset=utf-8 352.2856ms
+2024-01-15 01:24:22.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:24:22.105 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:24:22.111 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 5.7309ms
+2024-01-15 01:24:22.127 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.7117ms
+2024-01-15 01:24:24.992 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:24:25.004 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:24:25.006 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:24:25.025 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:24:25.057 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:24:25.061 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:24:25.065 +03:00 [INF] Executed ViewResult - view Index executed in 4.4939ms.
+2024-01-15 01:24:25.069 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 57.5459ms
+2024-01-15 01:24:25.072 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:24:25.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 82.0301ms
+2024-01-15 01:24:25.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:24:25.096 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 9.8706ms
+2024-01-15 01:26:09.214 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:26:09.410 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:26:09.412 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:26:09.414 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:26:09.416 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:26:09.417 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:26:10.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:26:11.115 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:26:11.165 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:26:11.440 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:26:14.021 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:26:14.157 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:26:14.321 +03:00 [INF] Executed ViewResult - view Index executed in 166.8184ms.
+2024-01-15 01:26:14.331 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 3161.9717ms
+2024-01-15 01:26:14.334 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:26:14.343 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:26:14.355 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 11.1937ms
+2024-01-15 01:26:14.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:26:14.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 3534.5455ms
+2024-01-15 01:26:14.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.1794ms
+2024-01-15 01:26:37.328 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:26:37.534 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:26:37.540 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:26:37.544 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:26:37.547 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:26:37.549 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:26:38.882 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:26:39.645 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:26:39.709 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:26:40.113 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:26:42.090 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:26:42.226 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:26:42.393 +03:00 [INF] Executed ViewResult - view Index executed in 166.4073ms.
+2024-01-15 01:26:42.404 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2688.6774ms
+2024-01-15 01:26:42.408 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:26:42.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:26:42.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 14.7018ms
+2024-01-15 01:26:42.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 3563.0165ms
+2024-01-15 01:26:42.432 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:26:42.503 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.8844ms
+2024-01-15 01:28:11.959 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:28:12.207 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:28:12.209 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:28:12.212 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:28:12.214 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:28:12.215 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:28:13.800 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:28:14.225 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:28:14.297 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:28:14.669 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:28:16.822 +03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:28:16.953 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:28:17.148 +03:00 [INF] Executed ViewResult - view Index executed in 195.8835ms.
+2024-01-15 01:28:17.155 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2850.8901ms
+2024-01-15 01:28:17.161 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:28:17.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:28:17.189 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:28:17.193 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 3397.9512ms
+2024-01-15 01:28:17.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 23.5188ms
+2024-01-15 01:28:17.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.6437ms
+2024-01-15 01:28:50.349 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:28:50.570 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:28:50.571 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:28:50.575 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:28:50.576 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:28:50.577 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:28:52.196 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:28:52.856 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:28:52.953 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:28:53.322 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:28:55.893 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:28:56.032 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:28:56.250 +03:00 [INF] Executed ViewResult - view Index executed in 216.086ms.
+2024-01-15 01:28:56.262 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 3291.0871ms
+2024-01-15 01:28:56.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:28:56.275 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:28:56.298 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 21.4983ms
+2024-01-15 01:28:56.331 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:28:56.349 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 4161.5516ms
+2024-01-15 01:28:56.403 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.174ms
+2024-01-15 01:29:41.572 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:29:41.804 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:29:41.806 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:29:41.809 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:29:41.810 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:29:41.811 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:29:43.210 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:29:43.811 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:29:43.861 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:29:44.089 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:29:45.989 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:29:46.088 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:29:46.256 +03:00 [INF] Executed ViewResult - view Index executed in 167.6607ms.
+2024-01-15 01:29:46.270 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2405.1935ms
+2024-01-15 01:29:46.278 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:29:46.284 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:29:46.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 18.0258ms
+2024-01-15 01:29:46.311 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:29:46.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 3112.6515ms
+2024-01-15 01:29:46.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.4686ms
+2024-01-15 01:32:17.118 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:32:17.503 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:32:17.505 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:32:17.510 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:32:17.514 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:32:17.516 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:32:19.483 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:32:20.318 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:32:20.424 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:32:22.004 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:32:24.322 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:32:24.420 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:32:24.582 +03:00 [INF] Executed ViewResult - view Index executed in 158.5316ms.
+2024-01-15 01:32:24.589 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 4160.0763ms
+2024-01-15 01:32:24.592 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:32:24.623 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:32:24.623 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:32:24.623 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:32:24.624 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:32:24.625 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 5150.3451ms
+2024-01-15 01:32:24.627 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:32:24.640 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:32:24.694 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 66.8051ms
+2024-01-15 01:32:24.702 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/fontawesome.css'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\css\fontawesome.css'
+2024-01-15 01:32:24.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 200 113367 text/css 91.4104ms
+2024-01-15 01:32:24.726 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/fontawesome.min.css'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\css\fontawesome.min.css'
+2024-01-15 01:32:24.732 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 200 80795 text/css 109.7138ms
+2024-01-15 01:32:24.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 130.9932ms
+2024-01-15 01:32:24.861 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/js/fontawesome.min.js'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\js\fontawesome.min.js'
+2024-01-15 01:32:24.861 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/js/fontawesome.js'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\js\fontawesome.js'
+2024-01-15 01:32:24.867 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 200 57045 text/javascript 242.4497ms
+2024-01-15 01:32:24.870 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 200 117674 text/javascript 248.3603ms
+2024-01-15 01:33:47.314 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:33:47.635 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:33:47.637 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:33:47.641 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:33:47.643 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:33:47.644 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:33:51.253 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/ - null null
+2024-01-15 01:33:51.435 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:33:51.500 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:33:51.839 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:33:54.041 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:33:54.141 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:33:54.299 +03:00 [INF] Executed ViewResult - view Index executed in 158.3028ms.
+2024-01-15 01:33:54.306 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2801.5593ms
+2024-01-15 01:33:54.310 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:33:54.341 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/ - 200 null text/html; charset=utf-8 3094.4795ms
+2024-01-15 01:33:54.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:33:54.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/v4-shims.css - null null
+2024-01-15 01:33:54.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:33:54.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:33:54.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/v4-shims.min.css - null null
+2024-01-15 01:33:54.342 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:33:54.343 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:33:54.343 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:33:54.360 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:33:54.380 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:33:54.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:33:54.405 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/v4-shims.css'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\css\v4-shims.css'
+2024-01-15 01:33:54.410 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:33:54.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 70.5071ms
+2024-01-15 01:33:54.416 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:33:54.422 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:33:54.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 83.8298ms
+2024-01-15 01:33:54.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/v4-shims.css - 200 41574 text/css 94.5394ms
+2024-01-15 01:33:54.439 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 96.1364ms
+2024-01-15 01:33:54.454 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/v4-shims.min.css'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\css\v4-shims.min.css'
+2024-01-15 01:33:54.460 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 116.4951ms
+2024-01-15 01:33:54.461 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.min.css'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\css\all.min.css'
+2024-01-15 01:33:54.464 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 103.4108ms
+2024-01-15 01:33:54.478 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/css/all.css'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\css\all.css'
+2024-01-15 01:33:54.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/v4-shims.min.css - 200 27593 text/css 157.1294ms
+2024-01-15 01:33:54.522 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.6728ms
+2024-01-15 01:33:54.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 200 102641 text/css 185.0192ms
+2024-01-15 01:33:54.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 200 140798 text/css 202.1074ms
+2024-01-15 01:34:24.314 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:34:24.555 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:34:24.557 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:34:24.560 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:34:24.563 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:34:24.564 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:34:25.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/ - null null
+2024-01-15 01:34:26.504 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:34:27.097 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:34:27.617 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:34:31.013 +03:00 [INF] Executed DbCommand (161ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:34:31.146 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:34:31.359 +03:00 [INF] Executed ViewResult - view Index executed in 216.9618ms.
+2024-01-15 01:34:31.365 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 4125.0424ms
+2024-01-15 01:34:31.367 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:34:31.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/ - 200 null text/html; charset=utf-8 5541.562ms
+2024-01-15 01:36:52.008 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:36:52.800 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:36:52.806 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:36:52.813 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:36:52.815 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:36:52.816 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:36:54.800 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:36:56.104 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:36:56.194 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:36:56.548 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:36:58.674 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:36:58.775 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:36:58.939 +03:00 [INF] Executed ViewResult - view Index executed in 167.6286ms.
+2024-01-15 01:36:58.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:36:58.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:36:59.000 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:36:59.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:36:59.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:36:59.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:36:59.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:36:59.039 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:36:59.047 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2843.6034ms
+2024-01-15 01:36:59.052 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:36:59.052 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:36:59.057 +03:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2024-01-15 01:36:59.062 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:36:59.063 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 62.7358ms
+2024-01-15 01:36:59.064 +03:00 [INF] The file /lib/font-awesome/css/all.css was not modified
+2024-01-15 01:36:59.067 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:36:59.073 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:36:59.076 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 79.6214ms
+2024-01-15 01:36:59.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 83.3572ms
+2024-01-15 01:36:59.083 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 304 null text/css 59.7804ms
+2024-01-15 01:36:59.085 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 48.1458ms
+2024-01-15 01:36:59.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 304 null text/css 61.9941ms
+2024-01-15 01:36:59.105 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 67.7954ms
+2024-01-15 01:36:59.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 4462.81ms
+2024-01-15 01:36:59.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.0781ms
+2024-01-15 01:36:59.255 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-01-15 01:36:59.328 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-solid-900.woff2'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\webfonts\fa-solid-900.woff2'
+2024-01-15 01:36:59.331 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - 200 156496 font/woff2 76.084ms
+2024-01-15 01:38:58.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:38:58.648 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:38:58.655 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:38:58.665 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:38:58.850 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:38:58.857 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:38:58.897 +03:00 [INF] Executed ViewResult - view Index executed in 41.4954ms.
+2024-01-15 01:38:58.901 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 241.9149ms
+2024-01-15 01:38:58.903 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:38:58.905 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 325.4834ms
+2024-01-15 01:38:58.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:38:58.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:38:58.945 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:38:58.950 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:38:58.954 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:38:58.959 +03:00 [INF] The file /lib/font-awesome/css/all.css was not modified
+2024-01-15 01:38:58.961 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 22.0157ms
+2024-01-15 01:38:58.965 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 25.981ms
+2024-01-15 01:38:58.968 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 304 null text/css 22.9121ms
+2024-01-15 01:38:58.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:38:59.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:38:59.008 +03:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2024-01-15 01:38:59.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:38:59.014 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:38:59.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 304 null text/css 20.1327ms
+2024-01-15 01:38:59.020 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:38:59.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 18.1139ms
+2024-01-15 01:38:59.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:38:59.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 19.1716ms
+2024-01-15 01:38:59.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:38:59.046 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 21.0955ms
+2024-01-15 01:38:59.076 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.0786ms
+2024-01-15 01:38:59.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-01-15 01:38:59.107 +03:00 [INF] The file /lib/font-awesome/webfonts/fa-solid-900.woff2 was not modified
+2024-01-15 01:38:59.109 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - 304 null font/woff2 8.0008ms
+2024-01-15 01:39:23.000 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:39:23.011 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:39:23.016 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:39:23.024 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:39:23.049 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:39:23.054 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:39:23.072 +03:00 [INF] Executed ViewResult - view Index executed in 18.8789ms.
+2024-01-15 01:39:23.074 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 55.9235ms
+2024-01-15 01:39:23.079 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:39:23.080 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 80.1187ms
+2024-01-15 01:39:23.092 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:39:23.092 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:39:23.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 7.0027ms
+2024-01-15 01:39:23.105 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.8053ms
+2024-01-15 01:39:29.552 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:39:29.948 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:39:29.951 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:39:29.956 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:39:29.959 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:39:29.962 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:39:32.965 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:39:33.196 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:39:33.269 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:39:33.518 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:39:35.538 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:39:35.728 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:39:35.952 +03:00 [INF] Executed ViewResult - view Index executed in 227.2244ms.
+2024-01-15 01:39:35.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:39:35.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:39:36.021 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 2747.7995ms
+2024-01-15 01:39:36.069 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:39:36.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 78.492ms
+2024-01-15 01:39:36.106 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 3148.7988ms
+2024-01-15 01:39:36.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 181.7671ms
+2024-01-15 01:40:11.428 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:40:11.788 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:40:11.791 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:40:11.795 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:40:11.796 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:40:11.798 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:40:14.305 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:40:15.190 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:40:15.760 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:40:16.232 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:40:19.465 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:40:19.602 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:40:20.001 +03:00 [INF] Executed ViewResult - view Index executed in 403.028ms.
+2024-01-15 01:40:20.083 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 4316.6185ms
+2024-01-15 01:40:20.088 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:40:20.144 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 5846.1324ms
+2024-01-15 01:40:21.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:40:21.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:40:21.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:40:21.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:40:21.937 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:40:21.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:40:21.990 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:40:21.990 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:40:21.990 +03:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2024-01-15 01:40:21.990 +03:00 [INF] The file /lib/font-awesome/css/all.css was not modified
+2024-01-15 01:40:21.990 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:40:21.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 106.5349ms
+2024-01-15 01:40:21.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 107.9411ms
+2024-01-15 01:40:21.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:40:21.998 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:40:21.998 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 304 null text/css 110.0877ms
+2024-01-15 01:40:21.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 304 null text/css 111.5532ms
+2024-01-15 01:40:22.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 63.7687ms
+2024-01-15 01:40:22.068 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:40:22.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 99.7949ms
+2024-01-15 01:40:22.111 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 113.3059ms
+2024-01-15 01:40:22.202 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 204.2907ms
+2024-01-15 01:40:22.980 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-01-15 01:40:23.009 +03:00 [INF] The file /lib/font-awesome/webfonts/fa-solid-900.woff2 was not modified
+2024-01-15 01:40:23.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - 304 null font/woff2 47.2938ms
+2024-01-15 01:41:38.366 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:41:38.608 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:41:38.610 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:41:38.612 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:41:38.614 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:41:38.615 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:41:39.765 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:41:40.388 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:41:40.509 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:41:41.154 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:41:43.728 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:41:43.860 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:41:44.079 +03:00 [INF] Executed ViewResult - view Index executed in 219.8966ms.
+2024-01-15 01:41:44.096 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 3578.2916ms
+2024-01-15 01:41:44.100 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:41:44.119 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2024-01-15 01:41:44.119 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2024-01-15 01:41:44.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:41:44.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 4377.9288ms
+2024-01-15 01:41:44.157 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:41:44.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:41:44.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:41:44.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:41:44.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:41:44.183 +03:00 [INF] The file /css/site.css was not modified
+2024-01-15 01:41:44.183 +03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2024-01-15 01:41:44.195 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:41:44.199 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/jquery/dist/jquery.min.js - null null
+2024-01-15 01:41:44.200 +03:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2024-01-15 01:41:44.205 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:41:44.214 +03:00 [INF] The file /lib/font-awesome/css/all.css was not modified
+2024-01-15 01:41:44.219 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:41:44.227 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:41:44.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 116.0834ms
+2024-01-15 01:41:44.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 118.4457ms
+2024-01-15 01:41:44.244 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:41:44.248 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2024-01-15 01:41:44.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 304 null text/css 92.8943ms
+2024-01-15 01:41:44.253 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 93.9424ms
+2024-01-15 01:41:44.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 304 null text/css 87.3955ms
+2024-01-15 01:41:44.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 88.9531ms
+2024-01-15 01:41:44.260 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 91.8195ms
+2024-01-15 01:41:44.265 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2024-01-15 01:41:44.271 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2024-01-15 01:41:44.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 77.6475ms
+2024-01-15 01:41:44.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/jquery/dist/jquery.min.js - 304 null text/javascript 76.4283ms
+2024-01-15 01:41:44.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:41:44.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 156.7626ms
+2024-01-15 01:41:44.444 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2024-01-15 01:41:44.456 +03:00 [INF] The file /js/site.js was not modified
+2024-01-15 01:41:44.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 261.5492ms
+2024-01-15 01:41:44.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 258.3867ms
+2024-01-15 01:41:44.667 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 382.5162ms
+2024-01-15 01:41:44.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-01-15 01:41:44.754 +03:00 [INF] The file /lib/font-awesome/webfonts/fa-solid-900.woff2 was not modified
+2024-01-15 01:41:44.757 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - 304 null font/woff2 49.0153ms
+2024-01-15 01:43:01.589 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:43:01.952 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:43:01.954 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:43:01.958 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:43:01.960 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:43:01.961 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:43:04.187 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/Home/Index - null null
+2024-01-15 01:43:04.488 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:43:04.562 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:43:05.105 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:43:08.041 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:43:08.142 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:43:08.333 +03:00 [INF] Executed ViewResult - view Index executed in 190.936ms.
+2024-01-15 01:43:08.341 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 3767.8619ms
+2024-01-15 01:43:08.344 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:43:08.358 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:43:08.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:43:08.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:43:08.364 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:43:08.366 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:43:08.367 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:43:08.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:43:08.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/Home/Index - 200 null text/html; charset=utf-8 4188.7509ms
+2024-01-15 01:43:08.380 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:43:08.380 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:43:08.388 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:43:08.389 +03:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2024-01-15 01:43:08.394 +03:00 [INF] The file /lib/font-awesome/css/all.css was not modified
+2024-01-15 01:43:08.405 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:43:08.409 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 43.3577ms
+2024-01-15 01:43:08.410 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:43:08.426 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 68.4652ms
+2024-01-15 01:43:08.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 70.175ms
+2024-01-15 01:43:08.450 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 304 null text/css 90.3387ms
+2024-01-15 01:43:08.459 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 304 null text/css 95.8158ms
+2024-01-15 01:43:08.461 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 94.0005ms
+2024-01-15 01:43:08.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 138.7991ms
+2024-01-15 01:43:08.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 177.4947ms
+2024-01-15 01:43:08.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-01-15 01:43:08.710 +03:00 [INF] The file /lib/font-awesome/webfonts/fa-solid-900.woff2 was not modified
+2024-01-15 01:43:08.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - 304 null font/woff2 18.6687ms
+2024-01-15 01:43:18.588 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/StockUnits - null null
+2024-01-15 01:43:18.642 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:43:18.659 +03:00 [INF] Route matched with {action = "Index", controller = "StockUnits"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.StockUnitsController (StockTrackingCase.MVC).
+2024-01-15 01:43:18.990 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[IsActive], [s].[PaperWeight], [s].[PurchasePrice], [s].[PurchasePriceCurrency], [s].[SellingPrice], [s].[SellingPriceCurrency], [s].[StockId], [s].[Type], [s].[UnitCode], [s0].[Id], [s0].[IsActive], [s0].[Type]
+FROM [StockUnits] AS [s]
+INNER JOIN [Stocks] AS [s0] ON [s].[StockId] = [s0].[Id]
+2024-01-15 01:43:19.057 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:43:19.064 +03:00 [INF] Stok Birim cagrildi
+2024-01-15 01:43:19.068 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:43:19.115 +03:00 [INF] Executed ViewResult - view Index executed in 48.0267ms.
+2024-01-15 01:43:19.117 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC) in 443.5055ms
+2024-01-15 01:43:19.121 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:43:19.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/StockUnits - 200 null text/html; charset=utf-8 536.3136ms
+2024-01-15 01:43:19.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:43:19.141 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:43:19.159 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 18.0265ms
+2024-01-15 01:43:19.169 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.7611ms
+2024-01-15 01:47:35.602 +03:00 [INF] User profile is available. Using 'C:\Users\okan.kaipoglu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-15 01:47:36.210 +03:00 [INF] Now listening on: https://localhost:7048
+2024-01-15 01:47:36.212 +03:00 [INF] Now listening on: http://localhost:5162
+2024-01-15 01:47:36.215 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-15 01:47:36.217 +03:00 [INF] Hosting environment: Development
+2024-01-15 01:47:36.218 +03:00 [INF] Content root path: C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC
+2024-01-15 01:47:39.400 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/ - null null
+2024-01-15 01:47:39.977 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:47:40.201 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.HomeController (StockTrackingCase.MVC).
+2024-01-15 01:47:40.770 +03:00 [INF]  Stok Dizin cagrildi
+2024-01-15 01:47:48.273 +03:00 [INF] Executed DbCommand (2,198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:47:48.421 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:47:48.677 +03:00 [INF] Executed ViewResult - view Index executed in 259.4111ms.
+2024-01-15 01:47:48.691 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC) in 8486.7091ms
+2024-01-15 01:47:48.696 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.HomeController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:47:48.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - null null
+2024-01-15 01:47:48.712 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - null null
+2024-01-15 01:47:48.716 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - null null
+2024-01-15 01:47:48.713 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - null null
+2024-01-15 01:47:48.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:47:48.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - null null
+2024-01-15 01:47:48.762 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - null null
+2024-01-15 01:47:48.818 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/ - 200 null text/html; charset=utf-8 9442.6892ms
+2024-01-15 01:47:48.807 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.js was not modified
+2024-01-15 01:47:48.807 +03:00 [INF] The file /lib/font-awesome/css/all.css was not modified
+2024-01-15 01:47:48.809 +03:00 [INF] The file /lib/font-awesome/css/all.min.css was not modified
+2024-01-15 01:47:48.807 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.css was not modified
+2024-01-15 01:47:48.816 +03:00 [INF] The file /lib/font-awesome/css/fontawesome.min.css was not modified
+2024-01-15 01:47:48.797 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:47:48.821 +03:00 [INF] The file /lib/font-awesome/js/fontawesome.min.js was not modified
+2024-01-15 01:47:48.825 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 109.5587ms
+2024-01-15 01:47:48.831 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.js - 304 null text/javascript 115.8159ms
+2024-01-15 01:47:48.832 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.css - 304 null text/css 121.7965ms
+2024-01-15 01:47:48.835 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/all.min.css - 304 null text/css 122.5035ms
+2024-01-15 01:47:48.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.css - 304 null text/css 133.2014ms
+2024-01-15 01:47:48.842 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/css/fontawesome.min.css - 304 null text/css 134.5492ms
+2024-01-15 01:47:48.855 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/js/fontawesome.min.js - 304 null text/javascript 94.2715ms
+2024-01-15 01:47:49.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 227.6127ms
+2024-01-15 01:47:49.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - null null
+2024-01-15 01:47:49.076 +03:00 [INF] The file /lib/font-awesome/webfonts/fa-solid-900.woff2 was not modified
+2024-01-15 01:47:49.079 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-solid-900.woff2 - 304 null font/woff2 17.385ms
+2024-01-15 01:47:58.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/StockUnits - null null
+2024-01-15 01:47:58.868 +03:00 [INF] Executing endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:47:58.876 +03:00 [INF] Route matched with {action = "Index", controller = "StockUnits"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller StockTrackingCase.MVC.Controllers.StockUnitsController (StockTrackingCase.MVC).
+2024-01-15 01:47:59.151 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Description], [s].[IsActive], [s].[PaperWeight], [s].[PurchasePrice], [s].[PurchasePriceCurrency], [s].[SellingPrice], [s].[SellingPriceCurrency], [s].[StockId], [s].[Type], [s].[UnitCode], [s0].[Id], [s0].[IsActive], [s0].[Type]
+FROM [StockUnits] AS [s]
+INNER JOIN [Stocks] AS [s0] ON [s].[StockId] = [s0].[Id]
+2024-01-15 01:47:59.224 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[IsActive], [s].[Type]
+FROM [Stocks] AS [s]
+ORDER BY [s].[Type]
+2024-01-15 01:47:59.229 +03:00 [INF] Stok Birim cagrildi
+2024-01-15 01:47:59.234 +03:00 [INF] Executing ViewResult, running view Index.
+2024-01-15 01:47:59.271 +03:00 [INF] Executed ViewResult - view Index executed in 38.8378ms.
+2024-01-15 01:47:59.274 +03:00 [INF] Executed action StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC) in 390.3699ms
+2024-01-15 01:47:59.276 +03:00 [INF] Executed endpoint 'StockTrackingCase.MVC.Controllers.StockUnitsController.Index (StockTrackingCase.MVC)'
+2024-01-15 01:47:59.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/StockUnits - 200 null text/html; charset=utf-8 434.1372ms
+2024-01-15 01:47:59.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-15 01:47:59.294 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/_vs/browserLink - null null
+2024-01-15 01:47:59.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_framework/aspnetcore-browser-refresh.js - 200 13778 application/javascript; charset=utf-8 8.9969ms
+2024-01-15 01:47:59.339 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.0162ms
+2024-01-15 01:47:59.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-regular-400.woff2 - null null
+2024-01-15 01:47:59.511 +03:00 [INF] Sending file. Request path: '/lib/font-awesome/webfonts/fa-regular-400.woff2'. Physical path: 'C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\wwwroot\lib\font-awesome\webfonts\fa-regular-400.woff2'
+2024-01-15 01:47:59.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7048/lib/font-awesome/webfonts/fa-regular-400.woff2 - 200 25452 font/woff2 83.5108ms

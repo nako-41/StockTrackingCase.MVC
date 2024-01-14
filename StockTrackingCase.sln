@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTrackingCase.MVC", "StockTrackingCase.MVC\StockTrackingCase.MVC.csproj", "{AE427DC0-FCBF-42A4-941B-B1D0FB043259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockTrackingCase.MVC", "StockTrackingCase.MVC\StockTrackingCase.MVC.csproj", "{AE427DC0-FCBF-42A4-941B-B1D0FB043259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTrackingCase.Entities", "StockTrackingCase.Entities\StockTrackingCase.Entities.csproj", "{F4712DE9-8852-4BCB-9357-569D6CC2561B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockTrackingCase.Entities", "StockTrackingCase.Entities\StockTrackingCase.Entities.csproj", "{F4712DE9-8852-4BCB-9357-569D6CC2561B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTrackingCase.DataAccess", "StockTrackingCase.DataAccess\StockTrackingCase.DataAccess.csproj", "{BCD2BD8E-921C-4365-A3B7-7DD079935BCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockTrackingCase.DataAccess", "StockTrackingCase.DataAccess\StockTrackingCase.DataAccess.csproj", "{BCD2BD8E-921C-4365-A3B7-7DD079935BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTrackingCase.Business", "StockTrackingCase.Business\StockTrackingCase.Business.csproj", "{0CBB3FF5-65C0-4F5F-847B-F83CD7FFA0D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockTrackingCase.Business", "StockTrackingCase.Business\StockTrackingCase.Business.csproj", "{0CBB3FF5-65C0-4F5F-847B-F83CD7FFA0D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

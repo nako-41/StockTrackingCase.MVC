@@ -13,7 +13,7 @@
 
 
 <div class="form-group">
-    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">Stok Birimi Ekle</button>
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal"><i class="fa-solid fa-plus" style="color: #FFD43B;"></i>Stok Birimi Ekle</button>
 </div>
 
 <div class="form-group mt-2">
@@ -56,8 +56,8 @@
                         }
                     </td>
                     <td>
-                        <button class="btn btn-sm btn-info">Güncelle</button>
-                        <a class="btn btn-sm btn-danger ms-1" asp-controller="StockUnits" asp-action="RemoveById" asp-route-id="@item.Id">Sil</a>
+                        <button class="btn btn-sm btn-info"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <a class="btn btn-sm btn-danger ms-1" asp-controller="StockUnits" asp-action="RemoveById" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
                     </td>
                 </tr>
             }
@@ -150,7 +150,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary w-100">Kaydet</button>
+                    <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-floppy-disk"></i></button>
                 </div>
             </form>
         </div>

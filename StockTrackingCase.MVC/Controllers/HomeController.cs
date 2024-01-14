@@ -10,7 +10,7 @@ public class HomeController(IStockService stockService, ILogger<HomeController> 
 
     public IActionResult Index()
     {
-        _logger.LogInformation("Dizin cagrildi");
+        _logger.LogInformation(" Stok Dizin cagrildi");
         List<Stock>? stock = stockService.GetAll().Data;
         return View(stock);
     }
