@@ -1,0 +1,11 @@
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\bin\Debug\net8.0\StockTrackingCase.Entities.deps.json
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\bin\Debug\net8.0\StockTrackingCase.Entities.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\bin\Debug\net8.0\StockTrackingCase.Entities.pdb
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.AssemblyInfoInputs.cache
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.AssemblyInfo.cs
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.csproj.CoreCompileInputs.cache
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\refint\StockTrackingCase.Entities.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.pdb
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\ref\StockTrackingCase.Entities.dll

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StockTrackingCase.Business/1.0.0": {
+        "dependencies": {
+          "StockTrackingCase.Entities": "1.0.0"
+        },
+        "runtime": {
+          "StockTrackingCase.Business.dll": {}
+        }
+      },
+      "StockTrackingCase.Entities/1.0.0": {
+        "runtime": {
+          "StockTrackingCase.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StockTrackingCase.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StockTrackingCase.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

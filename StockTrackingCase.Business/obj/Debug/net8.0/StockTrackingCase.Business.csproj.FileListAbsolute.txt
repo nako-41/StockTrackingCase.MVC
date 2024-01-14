@@ -1,0 +1,15 @@
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\bin\Debug\net8.0\StockTrackingCase.Business.deps.json
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\bin\Debug\net8.0\StockTrackingCase.Business.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\bin\Debug\net8.0\StockTrackingCase.Business.pdb
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\bin\Debug\net8.0\StockTrackingCase.Entities.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\bin\Debug\net8.0\StockTrackingCase.Entities.pdb
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.csproj.AssemblyReference.cache
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.AssemblyInfoInputs.cache
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.AssemblyInfo.cs
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.csproj.CoreCompileInputs.cache
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.csproj.CopyComplete
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\refint\StockTrackingCase.Business.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\StockTrackingCase.Business.pdb
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Business\obj\Debug\net8.0\ref\StockTrackingCase.Business.dll
