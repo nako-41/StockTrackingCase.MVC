@@ -10,8 +10,4 @@
     <ProjectReference Include="..\StockTrackingCase.Entities\StockTrackingCase.Entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>

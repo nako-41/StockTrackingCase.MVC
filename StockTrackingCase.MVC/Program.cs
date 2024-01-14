@@ -1,3 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using StockTrackingCase.Business.Services;
+using StockTrackingCase.DataAccess.Context;
+using StockTrackingCase.DataAccess.Repositories;
+using StockTrackingCase.DataAccess.Services;
+using StockTrackingCase.Entities.Abstractions;
+using StockTrackingCase.Entities.Repositories;
+
 namespace StockTrackingCase.MVC;
 
 public class Program
@@ -6,16 +14,28 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
+        builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        {
+            options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+        });
+        #region Dependency Injection
+        builder.Services.AddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
+
+        builder.Services.AddScoped<IStockRepository, StockRepository>();
+        builder.Services.AddScoped<IStockUnitRepository, StockUnitRepository>();
+        builder.Services.AddScoped<IStockService, StockService>();
+        builder.Services.AddScoped<IStockUnitService, StokUnitService>();
+        #endregion
+
         builder.Services.AddControllersWithViews();
 
         var app = builder.Build();
 
-        // Configure the HTTP request pipeline.
+       
         if (!app.Environment.IsDevelopment())
         {
             app.UseExceptionHandler("/Home/Error");
-            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+         
             app.UseHsts();
         }
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StockTrackingCase.Entities.Models;
+﻿namespace StockTrackingCase.Entities.Models;
 public sealed class Stock
 {
     public Stock()

@@ -17,3 +17,4 @@ C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingC
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.DataAccess\obj\Debug\net8.0\StockTrackingCase.DataAccess.pdb
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.DataAccess\obj\Debug\net8.0\StockTrackingCase.DataAccess.genruntimeconfig.cache
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.DataAccess\obj\Debug\net8.0\ref\StockTrackingCase.DataAccess.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.DataAccess\obj\Debug\net8.0\StockTrackingCase.DataAccess.sourcelink.json

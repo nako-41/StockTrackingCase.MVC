@@ -140,3 +140,4 @@ C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingC
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\obj\Debug\net8.0\StockTrackingCase.MVC.pdb
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\obj\Debug\net8.0\StockTrackingCase.MVC.genruntimeconfig.cache
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\obj\Debug\net8.0\ref\StockTrackingCase.MVC.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.MVC\obj\Debug\net8.0\StockTrackingCase.MVC.sourcelink.json

@@ -9,3 +9,4 @@ C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingC
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\refint\StockTrackingCase.Entities.dll
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.pdb
 C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\ref\StockTrackingCase.Entities.dll
+C:\Users\okan.kaipoglu\Desktop\önemli\PROJELER\StockTrackingCase\StockTrackingCase.Entities\obj\Debug\net8.0\StockTrackingCase.Entities.sourcelink.json

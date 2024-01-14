@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockTrackingCase.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f4b9c54e07a56384dccb9829e65e46e72eda750")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockTrackingCase.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockTrackingCase.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
