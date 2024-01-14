@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using StockTrackingCase.Business.Services;
 using StockTrackingCase.DataAccess.Context;
 using StockTrackingCase.DataAccess.Repositories;
@@ -18,14 +19,27 @@ public class Program
         {
             options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
         });
-        #region Dependency Injection
+  
         builder.Services.AddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
 
         builder.Services.AddScoped<IStockRepository, StockRepository>();
         builder.Services.AddScoped<IStockUnitRepository, StockUnitRepository>();
         builder.Services.AddScoped<IStockService, StockService>();
         builder.Services.AddScoped<IStockUnitService, StokUnitService>();
-        #endregion
+
+
+        Log.Logger = new LoggerConfiguration()
+           .WriteTo.Console()
+           .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Day)  
+           .CreateLogger();
+
+        builder.Services.AddLogging(loggingBuilder =>
+        {
+            loggingBuilder.ClearProviders(); 
+            loggingBuilder.AddSerilog();    
+        });
+
+        builder.Host.UseSerilog();
 
         builder.Services.AddControllersWithViews();
 

@@ -1,30 +1,96 @@
 using Microsoft.AspNetCore.Mvc;
-using StockTrackingCase.MVC.Models;
-using System.Diagnostics;
+using StockTrackingCase.Business.Services;
+using StockTrackingCase.Entities.DTOs;
+using StockTrackingCase.Entities.Models;
 
 namespace StockTrackingCase.MVC.Controllers;
-public class HomeController : Controller
+public class HomeController(IStockService stockService, ILogger<HomeController> _logger) : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+   
 
     public IActionResult Index()
     {
-        return View();
+        _logger.LogInformation("Dizin cagrildi");
+        List<Stock>? stock = stockService.GetAll().Data;
+        return View(stock);
+    }
+    
+
+    [HttpPost]
+    public IActionResult Add(AddStockDto request)
+    {
+        //var response = stockService.Add(request);
+
+        //if (!response.IsSuccess)
+        //{
+        //    TempData["Error"] = response.ErrorMessage;
+        //}
+
+        //return RedirectToAction("Index");
+        try
+        {
+            var response = stockService.Add(request);
+
+            if (!response.IsSuccess)
+            {
+                TempData["Error"] = response.ErrorMessage;
+            }
+
+            _logger.LogInformation("Yeni stok eklendi: {Type}", request.Type);
+
+            return RedirectToAction("Index");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Stok eklenirken bir hata oluþtu.");
+            TempData["Error"] = "Stok eklenirken bir hata oluþtu.";
+            return RedirectToAction("Index");
+        }
     }
 
-    public IActionResult Privacy()
+    [HttpGet]
+    public IActionResult RemoveById(Guid id)
     {
-        return View();
+        //var response = stockService.RemoveById(id);
+
+        //if (!response.IsSuccess)
+        //{
+        //    TempData["Error"] = response.ErrorMessage;
+        //}
+
+        //return RedirectToAction("Index");
+        try
+        {
+            var response = stockService.RemoveById(id);
+
+            if (!response.IsSuccess)
+            {
+                TempData["Error"] = response.ErrorMessage;
+            }
+
+            _logger.LogInformation("Stok silindi. Stok Id: {StockId}", id);
+
+            return RedirectToAction("Index");
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Stok silinirken bir hata oluþtu.");
+            TempData["Error"] = "Stok silinirken bir hata oluþtu.";
+            return RedirectToAction("Index");
+        }
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
+
+    [HttpGet]
+    public IActionResult Update(Guid Id)
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        var response = stockService.Update(Id);
+
+        if (!response.IsSuccess)
+        {
+            TempData["Error"] = response.ErrorMessage;
+        }
+
+        return View();
     }
 }

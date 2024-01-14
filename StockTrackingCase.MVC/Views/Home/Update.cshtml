@@ -1,0 +1,46 @@
+﻿@using StockTrackingCase.Entities.Models
+
+@model List<Stock>
+@{
+    ViewData["Title"] = "Home Page";
+    int index = 0;
+}
+
+@if (TempData["Error"] is not null)
+{
+    <h3 class="alert alert-danger">@TempData["Error"]</h3>
+}
+
+
+<div class="form-group">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">Stok Türü Degistir</button>
+</div>
+<h1>Update</h1>
+
+
+<div class="form-group">
+    <label>Stok Türü</label>
+    <input class="form-control" name="type" required minLenght="3" />
+</div>
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Stok Türü Degistir</h1>
+                <button type="button" class="btn-close" id="addModalCloseBtn" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-controller="Home" asp-action="Add" method="post" autocomplete="off">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Stok Türü</label>
+                        <input class="form-control" name="type" required minLenght="3" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary w-100">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

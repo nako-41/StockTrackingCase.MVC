@@ -13,4 +13,5 @@ public interface IStockService
     Response<Stock> Add(AddStockDto request);
     Response<Stock> RemoveById(Guid id);
     Response<List<Stock>> GetAll();
+    Response<Stock> Update(Guid id);
 }

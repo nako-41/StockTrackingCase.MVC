@@ -47,4 +47,18 @@ public sealed class StockService(
 
         return new(stock);
     }
+
+    public Response<Stock> Update(Guid id)
+    {
+        Stock? stock = stockRepository.GetByExpession(P=>P.Id==id);
+        if (stock is null)
+        {
+            return new("Stok türü bulunamadı!");
+        }
+
+        stockRepository.Update(stock);
+        unitOfWork.SaveChanges();
+
+        return new(stock);
+    }
 }
